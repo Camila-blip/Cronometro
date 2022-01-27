@@ -1,6 +1,8 @@
 import React from 'react';
 
 //só funciona em uma linha quando só  é uma única linha de código
+//Props são estáticas
+
 const Bemvindo2 = () => <h3>Teste</h3>
 
 const Bemvindo = (props) => {
