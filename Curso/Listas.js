@@ -44,4 +44,4 @@ class Feed extends Component {
         );
     }
 }
-export default Feed;
+export default Feed; 
