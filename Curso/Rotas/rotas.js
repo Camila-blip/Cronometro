@@ -1,13 +1,14 @@
-import React from "react";
 import { 
     BrowserRouter as Router,  
     Routes, 
     Route
 } from 'react-router-dom';
-import Home from './Pages/Home';
-import Sobre from './Pages/Sobre';
 import Contato from './Pages/Contato';
-import Header from './Components/Header'
+import Erro from './Pages/Erro';
+import Header from './Components/Header';
+import Home from './Pages/Home';
+import Produto from './Pages/Produto';
+import Sobre from './Pages/Sobre';
 
 const Rotas = () =>{
     return(
@@ -15,12 +16,11 @@ const Rotas = () =>{
             <Header/>
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
-            </Routes>
-            <Routes>
-                <Route path="/sobre" element={<Sobre/>}/>
-            </Routes>
-            <Routes>
-                <Route path="/contato" element={<Contato/>}/>
+                <Route exact path="/sobre" element={<Sobre/>}/>
+                <Route exact path="/contato" element={<Contato/>}/>
+                <Route path="/produto/:id" element={<Produto/>}/>
+
+                <Route path="*" element={<Erro/>}/>
             </Routes>
         </Router>
     )
