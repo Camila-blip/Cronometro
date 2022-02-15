@@ -9,19 +9,6 @@ function App() {
   const [autor, setAutor] = useState('');
 
   async function handleAdd(){
-    /*
-    await firebase.firestore().collection('posts')
-    .doc('12345')
-    .set({
-      titulo: titulo,
-      autor: autor
-    })
-    .then(()=>{
-      toast.success('Cadastrado com sucesso')
-    })
-    .catch((error =>{
-      toast.error('Ops algo deu errado!')
-    }))*/
     await firebase.firestore().collection('posts')
     .add({
       titulo: titulo,
