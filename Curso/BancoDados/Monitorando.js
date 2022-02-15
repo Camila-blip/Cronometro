@@ -29,20 +29,6 @@ function App() {
   },[])
 
   async function handleAdd(){
-    //update
-    /*
-    await firebase.firestore().collection('posts')
-    .doc('12345')
-    .set({
-      titulo: titulo,
-      autor: autor
-    })
-    .then(()=>{
-      toast.success('Cadastrado com sucesso')
-    })
-    .catch((error =>{
-      toast.error('Ops algo deu errado!')
-    }))*/
     //adiciona um novo post
     await firebase.firestore().collection('posts')
     .add({
