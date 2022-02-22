@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Container,  Login, LogoArea, LogoImagem, Form, Input, Button, LinkHref, H1 } from './SignIn';
-
+import { Container,  Login, LogoArea, LogoImagem, Form, Input, Button, LinkHref, H1 } from './../Estilizacao/login';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
