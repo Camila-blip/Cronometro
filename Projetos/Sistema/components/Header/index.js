@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { AuthContent } from '../../contexts/auth';
 import avatar from '../../Assets/avatar.png';
 import { FiHome, FiUser, FiSettings } from "react-icons/fi";
-import { Sidebar, Avatar, Img, LinkHref } from './headerStyle';
+import { Sidebar, Avatar, Img, LinkHref } from '../../Estilizacao/headerStyle';
 
 export default function Header(){
     const { user } = useContext(AuthContent);
@@ -16,11 +16,11 @@ export default function Header(){
                 <FiHome  size={23} />
                 Chamados
             </LinkHref>
-            <LinkHref to="/dashboard">
+            <LinkHref to="/customers">
                 <FiUser  size={23} />
                 Clientes
             </LinkHref>
-            <LinkHref to="/dashboard">
+            <LinkHref to="/profile">
                 <FiSettings  size={23} />
                 Configurações
             </LinkHref>
