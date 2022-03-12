@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { Container,  Login, LogoArea, LogoImagem, Form, Input, Button, LinkHref, H1 } from './../Estilizacao/login';
+import { Container,  Login, LogoArea, LogoImagem, Form, Input, Button, LinkHref, H1 } from '../../Estilizacao/login';
 import { AuthContent } from '../../contexts/auth';
 
 export default function SignIn() {

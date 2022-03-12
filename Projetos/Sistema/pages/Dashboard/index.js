@@ -8,7 +8,6 @@ export default function Dashboard(){
     return(
         <div>
             <Header/>
-           
             <button onClick={()=> signOut()}>Fazer logout</button>
         </div>
     )
