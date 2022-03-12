@@ -10,6 +10,6 @@ export const Titulo = styled.article`
     padding: .8em;
     > span{
         margin-left: 1em;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 `
